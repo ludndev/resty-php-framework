@@ -38,7 +38,7 @@ $ composer require ludndev/resty
 You can install it by cloning from github. Use composer to install dependancies.
 ```sh
 $ git clone https://github.com/ludndev/resty-php-framework.git
-$ cd path/to/resty/
+$ cd resty-php-framework/
 $ composer install
 ```
 
