@@ -1,4 +1,4 @@
-# Resty , the PhP Framework For Restful APIs
+# Resty , the PhP Framework For Restful APIs ( BETA , DEV, ON TEST )
 
 Why ***Resty*** ? Cause it's make restful API. One simplest way to create, handle and manage your restful API. Lighter, less code for more performance. Resty is for you, Resty is made for you.
 
