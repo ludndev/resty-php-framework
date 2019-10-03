@@ -30,9 +30,7 @@ Why ***Resty*** ? Cause it's make restful API. One simplest way to create, handl
 ## Installation
 
 **Easily from Packagist**
-```sh
-~~$ composer require ludndev/resty~~
-```
+Not yet
 
 **Another way**
 You can install it by cloning from github. Use composer to install dependancies.
