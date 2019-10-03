@@ -3,6 +3,11 @@
 	"name" : "ludndev/resty",
 	"description" : "Resty , the PhP Framework For Restful APIs",
 	"license" : "MIT",
+	
+	"minimum-stability" : "dev",
+	"prefer-stable": true,
+	"type" : "project",
+	
 	"keywords" : [
         "framework",
 		"rest",
