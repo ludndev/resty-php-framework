@@ -31,7 +31,7 @@ Why ***Resty*** ? Cause it's make restful API. One simplest way to create, handl
 
 **Easily from Packagist**
 ```sh
-$ composer require ludndev/resty
+~~$ composer require ludndev/resty~~
 ```
 
 **Another way**
