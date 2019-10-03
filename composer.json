@@ -1,0 +1,49 @@
+{
+
+	"name" : "ludndev/resty",
+	"description" : "Resty , the PhP Framework For Restful APIs",
+	"minimum-stability" : "dev",
+	"type" : "project",
+	"license" : "MIT",
+	"keywords" : [
+        "framework",
+		"rest",
+		"api"
+    ],
+
+	"authors" : [
+		{
+			"name" : "Ludndev",
+			"email" : "ludndev@gmail.com",
+			"homepage" : "https://github.com/ludndev/"
+		}
+	],
+
+	"autoload" : {
+		"psr-4" : {
+			"Resty\\Providers\\" : "providers",
+			"Resty\\Controllers\\" : "controllers"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Resty\\Tests\\" : "tests"
+		}
+	},
+
+    "require" : {
+        "phroute/phroute" : "^2.1",
+        "vlucas/phpdotenv" : "^3.6"
+    },
+	"require-dev" : {
+		"guzzlehttp/guzzle" : "^6.3",
+		"fzaninotto/faker" : "^1.8"
+	},
+
+	"scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+	}
+	
+}

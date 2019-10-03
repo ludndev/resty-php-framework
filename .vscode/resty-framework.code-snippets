@@ -1,0 +1,130 @@
+{
+	// Place your resty-php-framework workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	
+	"add env": {
+		"scope": "env,plaintext",
+		"prefix": "add",
+		"description": "Add new environment variable",
+		"body": [
+			"NAME = \"VALUE\""
+		]
+	},
+
+
+	"route": {
+		"scope": "php,route",
+		"prefix": "route",
+		"description": "Add new route with custom method",
+		"body": [
+			"\\$router->${0:method}( \"\\$routePrefix/${1:action}\" , [\"\\$classPrefix\/${1:action}\", \"Data\"] );"
+		]
+	},
+	"route any": {
+		"scope": "php,route",
+		"prefix": "route.any",
+		"description": "Add new 'ANY' route",
+		"body": [
+			"\\$router->any( \"\\$routePrefix/${0:action}\" , [\"\\$classPrefix\/${0:action}\", \"Data\"] );"
+		]
+	},
+	"route get": {
+		"scope": "php,route",
+		"prefix": "route.get",
+		"description": "Add new 'GET' route",
+		"body": [
+			"\\$router->get( \"\\$routePrefix/${0:action}\" , [\"\\$classPrefix\/${0:action}\", \"Data\"] );"
+		]
+	},
+	"route post": {
+		"scope": "php,route",
+		"prefix": "route.post",
+		"description": "Add new 'POST' route",
+		"body": [
+			"\\$router->post( \"\\$routePrefix/${0:action}\" , [\"\\$classPrefix\/${0:action}\", \"Data\"] );"
+		]
+	},
+
+
+	"Component class skeleton": {
+		"scope": "php,plaintext",
+		"prefix": "controller",
+		"body": [
+			"namespace Resty\\Controllers\\\\${0:ControllerName};",
+			"",
+			"",
+			"use \\Resty\\Controllers\\Controller;",
+			"use \\Resty\\Providers;",
+			"use \\Exception;",
+			"",
+			"",
+			"/**",
+			" * Class_full_name",
+			" * ",
+			" * Class_description",
+			" * ",
+			" * @since      1.0",
+			" */",
+			"class ${1:Action} extends Controller",
+			"{",
+			"",
+			"",
+			"\t/**",
+			"\t * Allow method for the request",
+			"\t */",
+			"\tprotected \\$method = 'ANY';",
+			"",
+			"",
+			"\t/**",
+			"\t * Generic method",
+			"\t * ",
+			"\t * @access public",
+			"\t * @param type \\$var",
+			"\t * @return mixed <array|object>",
+			"\t */",
+			"\tpublic function Data()",
+			"\t{",
+			"\t\tglobal \\$DB;",
+			"",
+			"",
+			"\t\t// ==============================================",
+			"\t\t// START EDITING",
+			"\t\t// ==============================================",
+			"",
+			"",
+			"\t\t# code ...",
+			"",
+			"",
+			"\t\t// ==============================================",
+			"\t\t// STOP EDITING",
+			"\t\t// ==============================================",
+			"\t\t",
+			"\t\t",
+			"\t\treturn \\$data;",
+			"\t}",
+			"",
+			"",
+			"}"
+		],
+		"description": "New controller template"
+	}
+
+
+
+}
+
